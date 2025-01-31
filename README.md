@@ -1,4 +1,4 @@
-# Expense Tracker App
+# __Spend Sense__: Expense Tracker App
 
 A simple web application designed to help users track their expenses across different categories and currencies.
 
@@ -43,6 +43,11 @@ Technologies Used
 - Charting Library: Chart.js
 - API for Exchange Rates: Frankfurter API
 
+Live demo
+---------
+
+You can access the live site [here](https://prj-3.netlify.app/index.html).
+
 Setup
 -----
 
@@ -52,9 +57,11 @@ Setup
 Contributing
 ------------
 
-Contributions are welcome. If you have any ideas or improvements, feel free to submit a pull request.
+Contributions are welcome. <br>
+If you have any ideas or improvements, feel free to submit a pull request.
 
 License
 -------
 
-[Insert License Information Here]
+MIT License. <br>
+You can find more information about this [here](LICENSE).

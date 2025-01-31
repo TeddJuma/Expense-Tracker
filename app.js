@@ -47,8 +47,8 @@ document.getElementById('expenseForm').addEventListener('submit', async (e) => {
     const today = new Date(expense.date);
     let nextDate = new Date(today);
     
-    // Generate recurring expenses (example for 12 months)
-    for (let i = 0; i < 12; i++) {
+    // Generate recurring expenses (Set for 4 months, but can be changed if needed.)
+    for (let i = 0; i < 4; i++) {
       const clonedExpense = { ...expense, id: Date.now() + i };
       clonedExpense.date = nextDate.toISOString().split('T')[0]; // Update date
 
@@ -188,6 +188,7 @@ function setBudget() {
   updateUI();
 }
 
+// Event listener for the Dark/light theme toggle
 document.addEventListener('DOMContentLoaded', () => {
   isDarkMode = localStorage.getItem('theme') === 'dark';
   setTheme();
@@ -195,4 +196,5 @@ document.addEventListener('DOMContentLoaded', () => {
   updateUI();
 });
 
+// Event lister for the set currency.
 document.getElementById('baseCurrency').addEventListener('change', updateBaseCurrency);
